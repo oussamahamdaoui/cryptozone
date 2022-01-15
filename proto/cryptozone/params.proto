@@ -1,0 +1,12 @@
+syntax = "proto3";
+package oussamahamdaoui.cryptozone.cryptozone;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/oussamahamdaoui/cryptozone/x/cryptozone/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
