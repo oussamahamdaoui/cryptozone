@@ -1,16 +1,14 @@
 accounts:
-  - name: alice
-    coins: ["20000token", "200000000stake"]
-  - name: bob
-    coins: ["10000token", "100000000stake"]
+  - name: cryptozone
+    coins: ["30000000crzs"]
 validator:
-  name: alice
-  staked: "100000000stake"
+  name: cryptozone
+  staked: "10000000crzs"
 client:
   openapi:
     path: "docs/static/openapi.yml"
-  vuex:
-    path: "vue/src/store"
-faucet:
-  name: bob
-  coins: ["5token", "100000stake"]
+genesis:
+  app_state:
+    staking:
+      params:
+        bond_denom: "crzs"
